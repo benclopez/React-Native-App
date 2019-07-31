@@ -15,7 +15,7 @@ export default class WorkoutListScreen extends Component {
     //Have a try and catch block for catching errors.
     try {
       //Assign the promise unresolved first then get the data using the json method. 
-      const apiRes = await fetch('http://localhost:5001/api/workout/');
+      const apiRes = await fetch('http://localhost/api/workout/');
       const workoutObj = await apiRes.json();
       console.log(workoutObj);
       this.setState({ workouts: workoutObj });

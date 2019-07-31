@@ -41,7 +41,7 @@ export default class TestApp extends Component {
     //Have a try and catch block for catching errors.
     try {
       //Assign the promise unresolved first then get the data using the json method. 
-      fetch('http://localhost:5001/api/workout/', {
+      fetch('http://localhost/api/workout/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
